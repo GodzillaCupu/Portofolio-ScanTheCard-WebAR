@@ -59,7 +59,6 @@ Shader "IndonesianTradingCard/StencilsBorder"
             }
             ENDHLSL
 
-
             Stencil
             {
                 Ref [_StencilRef]
