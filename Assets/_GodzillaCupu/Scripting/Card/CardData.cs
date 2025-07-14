@@ -1,8 +1,7 @@
 using System;
-using Unity.VisualScripting;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "CardData", menuName = "Scriptable Objects/CardData")]
+[CreateAssetMenu(fileName = "CardData", menuName = "Scriptable Objects/Cards/Data")]
 public class CardData : ScriptableObject
 {
     [SerializeField] private string cardName;
@@ -12,6 +11,7 @@ public class CardData : ScriptableObject
     [SerializeField] private ImageData cardBackground;
     [SerializeField] private ImageData cardBorder;
 
+    public int GetCardRank() => cardRank;
     public string GetCardName() => cardName.ToUpper();
     public string GetCardTottalLosses() => $"Rp. {tottalLosses} TRILLION";
     public string GetYear() => $"2025 EDITION #{cardRank}";

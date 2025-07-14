@@ -117,7 +117,7 @@ Material:
     m_Floats:
     - _AddPrecomputedVelocity: 0
     - _AlphaClip: 1
-    - _AlphaCutoff: 0.5
+    - _AlphaCutoff: 1
     - _AlphaToMask: 1
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
