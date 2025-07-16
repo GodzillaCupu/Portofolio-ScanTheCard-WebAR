@@ -6,20 +6,29 @@ using UnityEngine;
 
 public class CardController : MonoBehaviour
 {
-    [Header("Visual Components"), SerializeField] private CardVisualComponents cardVisualComponents;
+    [Header("Visual Components"), SerializeField] public CardVisualComponents cardVisualComponents;
     [SerializeField] private CardData currentCardData;
+
     public CardCollections cardCollections;
     [SerializeField] private List<CardData> cardDatas = new List<CardData>();
 
     [Serializable]
     public class CardVisualComponents
     {
+        [Serializable]
+        public enum ShaderType
+        {
+            ShaderGraph,
+            ShaderLab,
+        }
+
         public TextMeshProUGUI cardNameText;
         public TextMeshProUGUI cardLossesText;
         public TextMeshProUGUI cardYearText;
         public Renderer cardIconRenderer;
-        public Renderer cardBackgroundRenderer;
-        public Renderer cardBorderBGRenderer;
+        public ShaderType shaderType = ShaderType.ShaderLab;
+        public Renderer artworkBG_Renderer;
+        public Renderer borderBG_Renderer;
         public ImageType imageType;
 
         [Serializable]
@@ -33,19 +42,27 @@ public class CardController : MonoBehaviour
             cardYearText.text = data.GetYear();
 
             // Update the renderers with the textures
-            cardBorderBGRenderer.material.mainTexture =
+            borderBG_Renderer.material.mainTexture =
                 imageType != ImageType.Sprite ?
                 data.GetBorderTexture() : data.GetBorderSprite().texture;
 
-            cardBackgroundRenderer.material.mainTexture =
+
+            if (shaderType == ShaderType.ShaderGraph)
+            {
+                artworkBG_Renderer.material.SetTexture("_Main_Texture",
+                    imageType != ImageType.Sprite ? data.GetBackgroundTexture() : data.GetBackgroundSprite().texture);
+                borderBG_Renderer.material.SetTexture("_Main_Texture",
+                    imageType != ImageType.Sprite ? data.GetIconTexture() : data.GetIconSprite().texture);
+                return;
+            }
+
+            artworkBG_Renderer.material.mainTexture =
                 imageType != ImageType.Sprite ?
                 data.GetBackgroundTexture() : data.GetBackgroundSprite().texture;
 
             cardIconRenderer.material.mainTexture =
                 imageType != ImageType.Sprite ?
                     data.GetIconTexture() : data.GetIconSprite().texture;
-
-
         }
     }
 
@@ -74,6 +91,9 @@ public class CardController : MonoBehaviour
             cardDatas = new List<CardData>(cardCollections.cardDatas);
         else
             Debug.LogWarning("No card data available in the collections.");
+
+        InitializeRandomCard();
+        UpdateCardVisuals();
     }
     public void InitializeFirstCard()
     {
@@ -84,7 +104,7 @@ public class CardController : MonoBehaviour
         }
         currentCardData = cardDatas[0];
     }
-    
+
     public void InitializeRandomCard()
     {
         if (cardDatas == null || cardDatas.Count == 0)
@@ -141,4 +161,5 @@ public class CardController : MonoBehaviour
         }
         cardDatas = sortedData;
     }
+    public bool isTestMode;
 }
