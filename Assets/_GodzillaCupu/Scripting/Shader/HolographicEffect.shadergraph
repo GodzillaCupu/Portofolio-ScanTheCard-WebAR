@@ -2828,7 +2828,7 @@
     "m_ObjectId": "3bc3be6a36d1457094aea96e3de5cef5",
     "m_Title": "Holo Masking",
     "m_Position": {
-        "x": -3869.000244140625,
+        "x": -3869.0,
         "y": 342.0
     }
 }
@@ -2952,7 +2952,7 @@
     "m_DefaultRefNameVersion": 1,
     "m_RefNameGeneratedByDisplayName": "Base Texture",
     "m_DefaultReferenceName": "_Base_Texture",
-    "m_OverrideReferenceName": "",
+    "m_OverrideReferenceName": "_MainTex",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
     "m_CustomSlotLabel": "",
@@ -4694,7 +4694,7 @@
     "m_Title": "Hallo Collor",
     "m_Position": {
         "x": -2449.0,
-        "y": -322.00006103515627
+        "y": -322.0
     }
 }
 
@@ -5241,10 +5241,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -450.0,
-            "y": -77.99999237060547,
-            "width": 139.99996948242188,
-            "height": 33.99998474121094
+            "x": -438.0000305175781,
+            "y": -97.9999771118164,
+            "width": 139.99993896484376,
+            "height": 33.999969482421878
         }
     },
     "m_Slots": [
@@ -5331,8 +5331,8 @@
     "m_ObjectId": "8f907fab80024d3dba6ecc01f577c2a4",
     "m_Title": "Base Texture",
     "m_Position": {
-        "x": -1430.0001220703125,
-        "y": -736.0000610351563
+        "x": -1430.0,
+        "y": -736.0
     }
 }
 
@@ -6231,7 +6231,7 @@
     "m_ObjectId": "a90057d77164447f8c5a8dfb175c82d2",
     "m_Title": "Holographic",
     "m_Position": {
-        "x": -3543.000244140625,
+        "x": -3543.0,
         "y": 1231.0
     }
 }
@@ -8132,7 +8132,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
     "m_ObjectId": "ec27b14388c544e88557312ede28cf58",
     "m_Id": 0,
-    "m_DisplayName": "Color",
+    "m_DisplayName": "Primary Color",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",

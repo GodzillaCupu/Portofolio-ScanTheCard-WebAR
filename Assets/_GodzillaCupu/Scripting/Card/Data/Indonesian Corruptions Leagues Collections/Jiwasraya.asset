@@ -12,15 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80c90f8ac38710c4783a05ec5a73ec53, type: 3}
   m_Name: Jiwasraya
   m_EditorClassIdentifier: 
-  cardName: jiwasraya
-  tottalLosses: 17
-  cardRank: 7
-  cardIcon:
-    cardSpirite: {fileID: 21300000, guid: 5f3e281135807594c909d616ba63ca74, type: 3}
-    cardImage: {fileID: 2800000, guid: 5f3e281135807594c909d616ba63ca74, type: 3}
-  cardBackground:
-    cardSpirite: {fileID: 21300000, guid: 2595e5119c8b60f4b8be076db39ee3f1, type: 3}
-    cardImage: {fileID: 2800000, guid: 2595e5119c8b60f4b8be076db39ee3f1, type: 3}
-  cardBorder:
-    cardSpirite: {fileID: 21300000, guid: 62acb5825e5d01c449da3ec13408ab42, type: 3}
-    cardImage: {fileID: 2800000, guid: 62acb5825e5d01c449da3ec13408ab42, type: 3}
+  ID: Pt. jiwasraya
+  lossAmount: 17
+  rank: 7
+  icon: {fileID: 21300000, guid: 5f3e281135807594c909d616ba63ca74, type: 3}
+  artworkBackground: {fileID: 21300000, guid: 2595e5119c8b60f4b8be076db39ee3f1, type: 3}
+  borderBackground: {fileID: 21300000, guid: 62acb5825e5d01c449da3ec13408ab42, type: 3}
