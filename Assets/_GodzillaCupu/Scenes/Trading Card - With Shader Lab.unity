@@ -1102,27 +1102,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4c979c8b54460c4a96190ff561630c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardVisualComponents:
-    cardNameText: {fileID: 125295021}
-    cardLossesText: {fileID: 1191808970}
-    cardYearText: {fileID: 451120783}
-    cardIconRenderer: {fileID: 1690199826}
-    cardBackgroundRenderer: {fileID: 1754364045}
-    cardBorderBGRenderer: {fileID: 374673681}
-    imageType: 1
-  currentCardData: {fileID: 11400000, guid: 0d9c0777272b60244912c0166d409525, type: 2}
-  cardCollections: {fileID: 11400000, guid: c2c8021ec01b3ee479978cb21a738eed, type: 2}
-  cardDatas:
-  - {fileID: 11400000, guid: d2175d59b1398f8408dbfd18aab6864c, type: 2}
-  - {fileID: 11400000, guid: afbb43bdef82cbd41829d7a8267c3ae9, type: 2}
-  - {fileID: 11400000, guid: c032732a399dc264ab9e8ad783d5351b, type: 2}
-  - {fileID: 11400000, guid: 0d9c0777272b60244912c0166d409525, type: 2}
-  - {fileID: 11400000, guid: 61b1e89bdd1f7914b9072ee9374de4f3, type: 2}
-  - {fileID: 11400000, guid: 5bec376f8e6c870468568aa4b9173d64, type: 2}
-  - {fileID: 11400000, guid: 10403219583939546a9feae21a5b24ae, type: 2}
-  - {fileID: 11400000, guid: 63c5cb9436e1c8145af7dd949a0657a7, type: 2}
-  - {fileID: 11400000, guid: 3a11e312624c96a468447692d4b59cf2, type: 2}
-  - {fileID: 11400000, guid: 413af2ffb75095e4a890d70b3a78dbe4, type: 2}
+  data:
+    currentCard: {fileID: 0}
+    collections: {fileID: 0}
+    cards: []
+  visualComponents:
+    shaderType: 1
+    cardNameText: {fileID: 0}
+    cardLossesText: {fileID: 0}
+    cardYearText: {fileID: 0}
+    cardIconRenderer: {fileID: 0}
+    artworkBG_Renderer: {fileID: 0}
+    borderBG_Renderer: {fileID: 0}
 --- !u!1 &1064735386
 GameObject:
   m_ObjectHideFlags: 0
