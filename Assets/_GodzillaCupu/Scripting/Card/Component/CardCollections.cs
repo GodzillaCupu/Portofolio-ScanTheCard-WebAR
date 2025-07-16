@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "CardCollections", menuName = "Scriptable Objects/Cards/Collections")]
+[CreateAssetMenu(fileName = "Collections", menuName = "Scriptable Objects/Cards/Collections")]
 public class CardCollections : ScriptableObject
 {
-    public CardColections collections;
-    public List<CardData> cardDatas;
+    public List<CardData> data;
+    public Collections collections;
 
     [Serializable]
     public enum CardRarity
@@ -18,7 +18,7 @@ public class CardCollections : ScriptableObject
     }
 
     [Serializable]
-    public enum CardColections
+    public enum Collections
     {
         IndonesiaCoruptionsLegues,
         BlackJack,
