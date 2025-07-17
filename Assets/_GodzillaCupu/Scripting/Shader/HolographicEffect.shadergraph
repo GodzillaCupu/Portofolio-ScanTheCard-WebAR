@@ -63,13 +63,13 @@
             "m_Id": "a7876e6bf48040d5a2f6f94640af7644"
         },
         {
-            "m_Id": "33887b8cff6449e4b7ef023671851c95"
-        },
-        {
             "m_Id": "6d94bfbd80b7404687740644120cccca"
         },
         {
             "m_Id": "b0827e106d574d44973ed2141693846a"
+        },
+        {
+            "m_Id": "33887b8cff6449e4b7ef023671851c95"
         }
     ],
     "m_Nodes": [
@@ -2639,13 +2639,10 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.CategoryData",
     "m_ObjectId": "33887b8cff6449e4b7ef023671851c95",
-    "m_Name": "Ramp",
+    "m_Name": "Advance",
     "m_ChildObjectList": [
         {
-            "m_Id": "69716029b7294f6c9b2f528f9c2b94bc"
-        },
-        {
-            "m_Id": "6906dca7139f4fb88790a9927bb42a50"
+            "m_Id": "a7e77d487b8f4b409d4c593b81d00a7b"
         }
     ]
 }
@@ -4354,28 +4351,19 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.CategoryData",
     "m_ObjectId": "6d94bfbd80b7404687740644120cccca",
-    "m_Name": "Effect",
+    "m_Name": "Hollo Masking",
     "m_ChildObjectList": [
-        {
-            "m_Id": "f96ee30c2ed940d7b023b2cdf4bbf585"
-        },
-        {
-            "m_Id": "26abd2a7d7834542b3dc218c09225d02"
-        },
         {
             "m_Id": "d1dd2b27d7894da790910a8373a717c7"
         },
         {
-            "m_Id": "9b9d33ea496b4264878d54cb4056911f"
+            "m_Id": "f4ad4c5901834b4f8c9ad8d65cafaf6c"
         },
         {
             "m_Id": "e25ee8115d3e43d3b113facff315e915"
         },
         {
             "m_Id": "bbc7be83a5eb40c18e11c20b2f777b94"
-        },
-        {
-            "m_Id": "a7e77d487b8f4b409d4c593b81d00a7b"
         }
     ]
 }
@@ -4691,10 +4679,10 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.GroupData",
     "m_ObjectId": "8036c9143aa742f8b1e8546821c4fa5d",
-    "m_Title": "Hallo Collor",
+    "m_Title": "Hollo Colors",
     "m_Position": {
         "x": -2449.0,
-        "y": -322.0
+        "y": -321.9999694824219
     }
 }
 
@@ -5331,7 +5319,7 @@
     "m_ObjectId": "8f907fab80024d3dba6ecc01f577c2a4",
     "m_Title": "Base Texture",
     "m_Position": {
-        "x": -1430.0,
+        "x": -1430.000244140625,
         "y": -736.0
     }
 }
@@ -5919,10 +5907,13 @@
     "m_Name": "",
     "m_ChildObjectList": [
         {
+            "m_Id": "4b49c3aff1a74875b8f10c4138713314"
+        },
+        {
             "m_Id": "440e05c077894ada8e02fb7b2bb11603"
         },
         {
-            "m_Id": "4b49c3aff1a74875b8f10c4138713314"
+            "m_Id": "9b9d33ea496b4264878d54cb4056911f"
         }
     ]
 }
@@ -6168,16 +6159,25 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.CategoryData",
     "m_ObjectId": "a7876e6bf48040d5a2f6f94640af7644",
-    "m_Name": "Noise",
+    "m_Name": "Hollo Collors",
     "m_ChildObjectList": [
         {
-            "m_Id": "22d6088ae4fa4e6389010b264cd2c7b5"
+            "m_Id": "f96ee30c2ed940d7b023b2cdf4bbf585"
+        },
+        {
+            "m_Id": "26abd2a7d7834542b3dc218c09225d02"
+        },
+        {
+            "m_Id": "69716029b7294f6c9b2f528f9c2b94bc"
+        },
+        {
+            "m_Id": "6906dca7139f4fb88790a9927bb42a50"
         },
         {
             "m_Id": "917e9c2846e04d16989528c51101a383"
         },
         {
-            "m_Id": "f4ad4c5901834b4f8c9ad8d65cafaf6c"
+            "m_Id": "22d6088ae4fa4e6389010b264cd2c7b5"
         }
     ]
 }
@@ -8482,10 +8482,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1086.0,
-            "y": -263.0000915527344,
-            "width": 104.9998779296875,
-            "height": 34.00004577636719
+            "x": -1085.0,
+            "y": -262.9999694824219,
+            "width": 148.00006103515626,
+            "height": 33.99995422363281
         }
     },
     "m_Slots": [

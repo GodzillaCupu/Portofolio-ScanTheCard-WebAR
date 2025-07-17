@@ -9,11 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 660ce034013ecd941bb0c6cfa6ceb60d
   - enabled: 0
-    path: Assets/_GodzillaCupu/Scenes/Trading Card.unity
-    guid: 52b1f17240a60d54daf36f9c914749fd
-  - enabled: 0
     path: Assets/Imagine/ImageTracker/Demos/Scenes/Demo-Basic.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/_GodzillaCupu/Scenes/Main.unity
+    guid: 768df623b77c638429ddf9927071127b
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 3451796e11dbba149b1f4922a632d320, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
