@@ -27,17 +27,15 @@ Material:
   m_ValidKeywords:
   - _ALPHATEST_ON
   - _RECEIVE_SHADOWS_OFF
-  - _SURFACE_TYPE_TRANSPARENT
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: 2450
   stringTagMap:
-    RenderType: Transparent
+    RenderType: TransparentCutout
   disabledShaderPasses:
   - MOTIONVECTORS
-  - DepthOnly
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -73,13 +71,13 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaClip: 1
-    - _AlphaToMask: 0
+    - _AlphaToMask: 1
     - _Blend: 0
     - _BlendModePreserveSpecular: 0
     - _CastShadows: 1
     - _Cull: 2
     - _Density: 5
-    - _DstBlend: 10
+    - _DstBlend: 0
     - _Heightmap_Strength: 0.5
     - _Offset: 0
     - _QueueControl: 0
@@ -89,16 +87,16 @@ Material:
     - _Scale: 10
     - _Smoothness: 0
     - _Speed: 0
-    - _SrcBlend: 5
-    - _Surface: 1
+    - _SrcBlend: 1
+    - _Surface: 0
     - _USE_COLOR_RAMP: 0
     - _WorkflowMode: 1
     - _ZTest: 4
-    - _ZWrite: 0
+    - _ZWrite: 1
     - _ZWriteControl: 0
     m_Colors:
     - _Base_Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Directions: {r: 1, g: 0, b: 0, a: 0}
+    - _Directions: {r: 1, g: 1, b: 0, a: 0}
     - _Primary_Color: {r: 1, g: 1, b: 1, a: 1}
     - _Secondary_Color: {r: 1, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
