@@ -21,12 +21,14 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: m_tradingcard_front_border_shaderGraph
-  m_Shader: {fileID: -6465566751694194690, guid: 401a8ba5c65bffb4bb276832a23406c6, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 90811498a6a82d34d9c52f8a64e47b3f, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _ALPHATEST_ON
   - _RECEIVE_SHADOWS_OFF
+  - _USING_HOLOGRAPHIC_EFFECT
+  - _USING_PARALLAX_EFFECT
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -40,6 +42,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _Background_Texture:
+        m_Texture: {fileID: 2800000, guid: 2595e5119c8b60f4b8be076db39ee3f1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BaseMap:
         m_Texture: {fileID: 2800000, guid: 60d419a0c4e5f0845a2c27dc78d49946, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -64,6 +70,14 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Holographic_Color_Ramp:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Holographic_Masking_Texture:
+        m_Texture: {fileID: 2800000, guid: 1b125ec91951ec940a7a42b999e861be, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 62acb5825e5d01c449da3ec13408ab42, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -84,11 +98,23 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Normal_Texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMapping_598fab635c6b46a688e6a1d14de40d8c_Heightmap_1_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Parralax_Heightmap_Texture:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -139,10 +165,19 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
+    - _Holographic_Density: 5
+    - _Holographic_Directions: 0.5
+    - _Holographic_Offset: 0
+    - _Holographic_Rotations_Scroll_Speed: 5
+    - _Holographic_Scale: 10
+    - _Holographic_Speed: 0.2
     - _Metallic: 0
-    - _Multipier: 3
+    - _Multipier: 5
+    - _Normal_Strength: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
+    - _Parallax_Depth: -1
+    - _Parallax_Strength: 50
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 0
@@ -155,16 +190,27 @@ Material:
     - _StencilRef: 2
     - _Stregth: 10
     - _Surface: 0
+    - _USE_HOLOGRAPHIC_COLOR_RAMP: 0
+    - _USING_HOLOGRAPHIC_EFFECT: 1
+    - _USING_PARALLAX_EFFECT: 1
+    - _Use_Mask_Texture: 1
+    - _Use_Normal_Map: 0
+    - _Use_as_masking: 1
     - _WorkflowMode: 1
     - _ZTest: 4
     - _ZWrite: 1
     - _ZWriteControl: 0
     m_Colors:
+    - _Background_Color: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Holographic_Primary_Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Holographic_Secondary_Color: {r: 1, g: 0.937409, b: 0, a: 1}
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
     - _Offside: {r: 0, g: 0, b: 0, a: 0}
+    - _Parallax_Offset: {r: 0, g: 0, b: 0, a: 0}
+    - _Parallax_Tilling: {r: 1, g: 1, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Tilling: {r: 1, g: 1, b: 0, a: 0}
     - _Tilting: {r: 1, g: 1, b: 0, a: 0}
